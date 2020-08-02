@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.circle{
+    background-color: #fff;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    /* 小手样式 */
+    cursor: pointer;
+    margin: 8px;
+    /* 扩张效果（默认） */
+    transform: scale(1);
+    /* 过渡 */
+    transition: transform 0.3s linear;
+}
+
+/* 设置grow类名的样式 */
+.circle.grow{
+    transform: scale(2);
+}
